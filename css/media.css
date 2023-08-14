@@ -1,17 +1,145 @@
 @media (min-width: 428px) {
-    .container {
-        max-width: 396px;
-    }
+.container {
+    max-width: 396px;
 }
+
+.section.hero {
+    max-width: 428px;
+}
+
+.hero-title {
+    font-size: 36px;
+    max-width: 320px;
+}
+}
+
+
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 736px;
-    }
+.container {
+    max-width: 736px;
 }
 
+.navigation-list {
+    display: flex;
+}
+
+.contacts {
+    display: block;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.section.hero {
+    max-width: 768px;
+    background-image: linear-gradient(var(--grey), var(--grey)),
+    url(../images/people-office-tab-1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section.hero {
+        background-image: linear-gradient(var(--grey), var(--grey)),
+        url(../images/people-office-tab-2x.jpg);
+}
+}
+
+.hero-title {
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+}
+
+.item-title.advantage {
+    text-align: left;
+}
+
+.advantage-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.advantages-list {
+    gap: 24px;
+}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1157px) {
+.contacts-list {
+    display: block;
+}
+
+.contact {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.header-logo-link {
+    margin-right: 120px;
+}
+
+.contacts-list-item:first-child .contact {
+    padding: 16px 0 6px;
+}
+
+.contacts-list-item:last-child .contact {
+    padding: 6px 0 16px;
+}
+}
+
+
+
 @media (min-width: 1158px) {
-    .container {
-        max-width: 1126px;
-    }
+.container {
+    max-width: 1126px;
+    width: 1126px;
+}
+
+.section.hero {
+    max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(var(--grey), var(--grey)),
+    url(../images/people-office-desktop-1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section.hero {
+    background-image: linear-gradient(var(--grey), var(--grey)),
+    url(../images/people-office-desktop-2x.jpg);
+}
+}
+
+.hero-title {
+    margin-bottom: 48px;
+}
+
+.advantage-illustration {
+    display: flex;
+}
+
+.item-title.advantage {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+}
+
+.advantage-item {
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+.section.advantages {
+    padding: 120px 0;
+}
+
+.section-actions {
+    display: block;
+}
 }

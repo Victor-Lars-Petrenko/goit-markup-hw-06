@@ -141,7 +141,7 @@ img {
 
 .navigation-underline {
     position: relative;
-    color: var(--ocean)
+    color: var(--ocean);
 }
 
 .navigation-underline::after {
@@ -157,6 +157,7 @@ img {
 
 .contacts {
     font-style: normal;
+    display: none;
 }
 
 .contact {
@@ -165,7 +166,6 @@ img {
     padding: 24px 0;
     color: inherit;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: none;
 }
 
 .contact:hover,
@@ -183,32 +183,43 @@ img {
     height: 22px;
     border: none;
     cursor: pointer;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .section.hero {
-    background-image: linear-gradient(var(--grey), var(--grey)), url(../images/people-office.jpg);
+    background-image: linear-gradient(var(--grey), var(--grey)), 
+    url(../images/people-office-mob-1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 188px 0;
-    max-width: 1440px;
+    padding: 112px 0;
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section.hero {
+        background-image: linear-gradient(var(--grey), var(--grey)),
+        url(../images/people-office-mob-2x.jpg);
+    }
 }
 
 .hero-title {
     color: var(--white);
     text-align: center;
-    font-size: 56px;
     font-weight: 700;
-    line-height: 1.07;
+    font-size: 28px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 496px;
-    margin-bottom: 48px;
+    max-width: 300px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -223,8 +234,7 @@ img {
     cursor: pointer;
     border-radius: 4px;
     border: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 16px 32px;
     min-width: 169px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -244,11 +254,17 @@ img {
     letter-spacing: 0.02em;
 }
 
+.item-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
 .advantage-illustration {
     border-radius: 4px;
     background: var(--cloud);
     padding: 24px 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
@@ -256,29 +272,32 @@ img {
 
 .item-title.advantage {
     margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.item-text.advantage {
+    font-weight: 500;
 }
 
 .advantage-item {
-    width: calc((100% - 3 * 24px) / 4);
+    width: 100%;
 }
 
-.advantages {
-    padding: 120px 0;
+.section.advantages {
+    padding: 96px 0;
 }
 
 .advantage-icon {
     fill: currentColor;
 }
 
-.item-text {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-}
-
 .advantages-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .section-title {
@@ -293,6 +312,7 @@ img {
 }
 
 .section-actions {
+    display: none;
     padding-bottom: 120px;
 }
 
