@@ -1,6 +1,6 @@
 @media (min-width: 428px) {
 .container {
-    max-width: 396px;
+    max-width: 428px;
 }
 
 .section.hero {
@@ -11,13 +11,17 @@
     font-size: 36px;
     max-width: 320px;
 }
+
+.footer-email-input {
+    width: 398px;
+}
 }
 
 
 
 @media (min-width: 768px) {
 .container {
-    max-width: 736px;
+    max-width: 768px;
 }
 
 .navigation-list {
@@ -65,6 +69,67 @@
 .advantages-list {
     gap: 24px;
 }
+
+.list-team {
+    gap: 64px 24px;
+}
+
+.item-team {
+    width: calc((100% - 24px) / 2);
+}
+
+.customers-list {
+    gap: 72px 24px;
+}
+
+.customer-item {
+    width: calc((100% - 2 * 24px) / 3);
+}
+
+.footer-container {
+    padding: 0 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer-information {
+    margin-right: 24px;
+    align-items: flex-start;
+}
+
+.footer-socials {
+    align-items: flex-start;
+}
+
+.footer-form-wrap {
+    align-items: flex-start;
+}
+
+.footer-form {
+    flex-direction: row;
+    gap: 24px;
+}
+
+.footer-email-input {
+    width: 264px;
+}
+
+.section-portfolio {
+    padding: 64px 0 96px;
+}
+
+.buttons-list {
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.cards-list {
+    gap: 72px 24px;
+}
+
+.portfolio-card {
+    width: calc((100% - 24px) / 2);
+}
 }
 
 
@@ -91,14 +156,25 @@
 .contacts-list-item:last-child .contact {
     padding: 6px 0 16px;
 }
+
+.section-team>.container {
+    max-width: 584px;
+}
+
+.section-customers>.container {
+    max-width: 584px;
+}
+
+.page-footer>.container {
+    max-width: 584px;
+}
 }
 
 
 
 @media (min-width: 1158px) {
 .container {
-    max-width: 1126px;
-    width: 1126px;
+    max-width: 1158px;
 }
 
 .section.hero {
@@ -141,5 +217,58 @@
 
 .section-actions {
     display: block;
+}
+
+.section-team {
+    padding: 120px 0;
+}
+
+.list-team {
+    gap: 24px;
+}
+
+.item-team {
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+.section-customers {
+    padding: 120px 0;
+}
+
+.customers-list {
+    gap: 24px;
+}
+
+.customer-item {
+    width: calc((100% - 5 * 24px) / 6);
+}
+
+.footer-information {
+    margin-bottom: 0;
+    margin-right: 120px;
+}
+
+.footer-socials {
+    margin-bottom: 0;
+}
+
+.footer-form-wrap {
+    margin-left: auto;
+}
+
+.section-portfolio {
+    padding: 100px 0 120px;
+}
+
+.buttons-list {
+    margin-bottom: 72px;
+}
+
+.cards-list {
+    gap: 48px 24px;
+}
+
+.portfolio-card {
+    width: calc((100% - 48px) / 3);
 }
 }

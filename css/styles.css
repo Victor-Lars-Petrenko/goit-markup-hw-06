@@ -73,7 +73,7 @@ img {
 }
 
 .container {
-    max-width: 288px;
+    max-width: 320px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -327,18 +327,19 @@ img {
 
 .section-team {
     background-color: var(--cloud);
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .list-team {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
+    justify-content: center;
 }
 
 .item-team {
     background: var(--white);
     border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 3 * 24px) / 4);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -391,16 +392,17 @@ img {
 }
 
 .section-customers {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .customers-list {
     display: flex;
-    gap: 24px;
+    gap: 72px 16px;
+    flex-wrap: wrap;
 }
 
 .customer-item {
-    width: calc((100% - 5 * 24px) / 6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
@@ -431,7 +433,7 @@ img {
 
 .page-footer {
     background-color: var(--navyblue);
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .footer-logo {
@@ -439,7 +441,7 @@ img {
 }
 
 .footer-logo-link {
-    margin-bottom: 16px;
+    margin-bottom: 17.5px;
     display: inline-block;
 }
 
@@ -452,15 +454,24 @@ img {
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
 }
 
 .footer-information {
-    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
 }
 
-.section-portfolio {
-    padding: 96px 0 120px 0;
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
 }
 
 .footer-socials-title {
@@ -505,12 +516,16 @@ img {
 }
 
 .footer-form-wrap {
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 .footer-form-title {
@@ -522,7 +537,7 @@ img {
 }
 
 .footer-email-input {
-    width: 264px;
+    width: 290px;
     height: 40px;
     color: var(--white);
     font-size: 12px;
@@ -549,7 +564,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 40px;
-    min-width: 165px;
+    width: 165px;
     padding: 8px 24px;
     border: none;
     border-radius: 4px;
@@ -572,6 +587,10 @@ img {
 .footer-btn-icon {
     fill: currentColor;
     margin-left: 16px;
+}
+
+.section-portfolio {
+    padding: 48px 0;
 }
 
 .portfolio-btn {
@@ -603,20 +622,20 @@ img {
 
 .buttons-list {
     display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 72px;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin-bottom: 48px;
 }
 
 .cards-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    gap: 48px;
 }
 
 .portfolio-card {
     background: var(--white);
-    width: calc((100% - 48px) / 3);
+    width: 100%;
 }
 
 .portfolio-card-link {
@@ -670,7 +689,7 @@ img {
     width: 100%;
     height: 100%;
     padding: 40px 32px;
-    transform: translateY(100%);
+    transform: translateY(101%);
     background: var(--iris);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
