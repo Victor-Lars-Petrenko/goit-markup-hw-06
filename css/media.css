@@ -15,6 +15,22 @@
 .footer-email-input {
     width: 398px;
 }
+
+.modal {
+    width: 392px;
+}
+
+.modal-text-input {
+    height: 120px;
+}
+
+.mob-menu-socials-list {
+    gap: 56px;
+}
+
+.mob-menu-tel {
+    font-size: 36px;
+}
 }
 
 
@@ -129,6 +145,15 @@
 
 .portfolio-card {
     width: calc((100% - 24px) / 2);
+}
+
+.modal {
+    width: 408px;
+    padding: 72px 25px 24px 23px;
+}
+
+.mob-menu {
+    display: none;
 }
 }
 
