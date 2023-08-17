@@ -4,7 +4,7 @@
 }
 
 .section.hero {
-    max-width: 428px;
+    min-width: 428px;
 }
 
 .hero-title {
@@ -14,6 +14,22 @@
 
 .footer-email-input {
     width: 398px;
+}
+
+.portfolio-btn {
+    font-size: inherit;
+}
+
+.buttons-list {
+    gap: 16px 24px;
+}
+
+.card-text>.item-title {
+    font-size: 20px;
+}
+
+.card-text>.item-text {
+    font-size: inherit;
 }
 
 .modal {
@@ -53,7 +69,7 @@
 }
 
 .section.hero {
-    max-width: 768px;
+    min-width: 768px;
     background-image: linear-gradient(var(--grey), var(--grey)),
     url(../images/people-office-tab-1x.jpg);
 }
